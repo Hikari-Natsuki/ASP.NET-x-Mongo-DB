@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clínica Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-logo">Clinica</div>
+        <nav class="nav-menu">
+            <button class="nav-link active" onclick="switchTab('doctores')">Doctores</button>
+            <button class="nav-link" onclick="switchTab('psicologia')">Psicología</button>
+            <button class="nav-link" onclick="switchTab('fisioterapia')">Fisioterapia</button>
+            <button class="nav-link" onclick="switchTab('odontologia')">Odontología</button>
+        </nav>
+    </header>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <main class="main-content">
+        
+        <section id="tab-doctores" class="tab-content active">
+            <div class="card">
+                <h2>Insertar Nuevo Personal Médico</h2>
+                <form id="form-doc-insert">
+                    <div class="grid-3">
+                        <div class="form-group"><label>ID Médico (Código de Registro)</label><input type="text" id="doc-id" required></div>
+                        <div class="form-group"><label>Nombre</label><input type="text" id="doc-nombre" required></div>
+                        <div class="form-group"><label>Apellido</label><input type="text" id="doc-apellido" required></div>
+                    </div>
+                    <div class="grid-3 mt-1">
+                        <div class="form-group"><label>Tipo Documento</label><input type="text" id="doc-tipo-doc" placeholder="C.C, Pasaporte" required></div>
+                        <div class="form-group"><label>Número Identificación</label><input type="text" id="doc-num-doc" required></div>
+                        <div class="form-group"><label>Especialidad Médica</label><input type="text" id="doc-especialidad" placeholder="ODONTOLOGIA, FISIOTERAPIA..." required></div>
+                    </div>
+                    <button type="button" class="btn btn-success mt-1" onclick="executeAction('doc', 'insert')">Guardar Doctor</button>
+                </form>
+            </div>
+            <div class="card mt-2">
+                <h2>Buscar Doctor por ID</h2>
+                <div class="search-box">
+                    <input type="text" id="doc-search-id" placeholder="Ingrese el ID único del médico...">
+                    <button class="btn btn-primary" onclick="executeAction('doc', 'search')">Buscar</button>
+                </div>
+                <div id="result-doc" class="result-display"></div>
+            </div>
+        </section>
+
+        <section id="tab-psicologia" class="tab-content">
+            <div class="card">
+                <h2>Formulario de Psicología (Registrar / Actualizar)</h2>
+                <form id="form-psicologia">
+                    <div class="grid-3">
+                        <div class="form-group"><label>ID Consulta (Actualizar)</label><input type="text" id="psi-id" readonly placeholder="Autogenerado por BD"></div>
+                        <div class="form-group"><label>ID Médico</label><input type="text" id="psi-medico-id"></div>
+                        <div class="form-group"><label>Entidad / EPS</label><input type="text" id="psi-entidad"></div>
+                    </div>
+                    
+                    <h3>Datos del Paciente</h3>
+                    <div class="grid-5">
+                        <div class="form-group"><label>Nombre Paciente</label><input type="text" id="psi-pac-nombre"></div>
+                        <div class="form-group"><label>Edad</label><input type="number" id="psi-pac-edad"></div>
+                        <div class="form-group"><label>Sexo</label><input type="text" id="psi-pac-sexo"></div>
+                        <div class="form-group"><label>Tipo ID</label><input type="text" id="psi-pac-tipo-doc" placeholder="CC, TI, RC"></div>
+                        <div class="form-group"><label>Número Documento</label><input type="text" id="psi-pac-doc"></div>
+                    </div>
+
+                    <h3>Datos Clínicos</h3>
+                    <div class="form-group"><label>Motivo de Consulta</label><textarea id="psi-motivo"></textarea></div>
+                    <div class="form-group"><label>Examen Mental</label><textarea id="psi-examen"></textarea></div>
+
+                    <div class="grid-2 mt-1">
+                        <div>
+                            <h4>Antecedentes</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-psi-antecedentes-tipo" placeholder="Tipo (Ej: Familiar)">
+                                <input type="text" id="input-psi-antecedentes-obs" placeholder="Observaciones">
+                                <button type="button" class="btn btn-secondary" onclick="addAntecedente('psi')">Agregar</button>
+                            </div>
+                            <ul id="list-psi-antecedentes" class="dynamic-list"></ul>
+                        </div>
+                        <div>
+                            <h4>Enfermedad Actual</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-psi-enfermedad" placeholder="Síntoma o descripción">
+                                <button type="button" class="btn btn-secondary" onclick="addSimpleItem('psi', 'enfermedad')">Agregar</button>
+                            </div>
+                            <ul id="list-psi-enfermedad" class="dynamic-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-2 mt-1">
+                        <div>
+                            <h4>Tratamiento</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-psi-tratamiento" placeholder="Tratamiento">
+                                <button type="button" class="btn btn-secondary" onclick="addSimpleItem('psi', 'tratamiento')">Agregar</button>
+                            </div>
+                            <ul id="list-psi-tratamiento" class="dynamic-list"></ul>
+                        </div>
+                        <div>
+                            <h4>Recomendaciones</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-psi-recomendaciones" placeholder="Recomendación">
+                                <button type="button" class="btn btn-secondary" onclick="addSimpleItem('psi', 'recomendaciones')">Agregar</button>
+                            </div>
+                            <ul id="list-psi-recomendaciones" class="dynamic-list"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-group mt-2">
+                        <button type="button" class="btn btn-success" onclick="executeAction('psi', 'insert')">Registrar</button>
+                        <button type="button" class="btn btn-warning" onclick="executeAction('psi', 'update')">Actualizar</button>
+                        <button type="button" class="btn btn-secondary" onclick="resetFormularios('fis')">Limpiar Campos</button>
+                    </form>
+            </div>
+            <div class="card mt-2">
+                <h2>Búsqueda y Eliminación</h2>
+                <div class="grid-2">
+                    <div class="search-box">
+                        <input type="text" id="psi-search-doc" placeholder="Cédula del paciente...">
+                        <button class="btn btn-primary" onclick="buscarHistoriales('psi')">Buscar Historias</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="psi-delete-id" placeholder="ID de la consulta a borrar...">
+                        <button class="btn btn-danger" onclick="executeAction('psi', 'delete')">Eliminar</button>
+                    </div>
+                </div>
+
+                <div id="contenedor-tabla-psi" class="mt-2" style="display: none;">
+                    <table class="table-clinica">
+                        <thead>
+                            <tr>
+                                <th>N° Documento</th>
+                                <th>Nombre Paciente</th>
+                                <th>Fecha</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-resultados-psi"></tbody>
+                    </table>
+                </div>
+                <div id="result-psi" class="result-display mt-1"></div>
+            </div>
+        </section>
+
+        <section id="tab-fisioterapia" class="tab-content">
+            <div class="card">
+                <h2>Formulario de Fisioterapia (Registrar / Actualizar)</h2>
+                <form id="form-fisioterapia">
+                    <div class="grid-4">
+                        <div class="form-group"><label>ID Consulta</label><input type="text" id="fis-id" readonly placeholder="Autogenerado"></div>
+                        <div class="form-group"><label>ID Médico</label><input type="text" id="fis-medico-id"></div>
+                        <div class="form-group"><label>Especialidad</label><input type="text" id="fis-especialidad"></div>
+                        <div class="form-group"><label>Entidad</label><input type="text" id="fis-entidad"></div>
+                    </div>
+                    <h3>Paciente</h3>
+                    <div class="grid-5">
+                        <div class="form-group"><label>Nombre</label><input type="text" id="fis-pac-nombre"></div>
+                        <div class="form-group"><label>Edad</label><input type="number" id="fis-pac-edad"></div>
+                        <div class="form-group"><label>Sexo</label><input type="text" id="fis-pac-sexo"></div>
+                        <div class="form-group"><label>Tipo ID</label><input type="text" id="fis-pac-tipo-doc" placeholder="CC"></div>
+                        <div class="form-group"><label>Número Documento</label><input type="text" id="fis-pac-doc"></div>
+                    </div>
+                    <h3>Evaluación Fisioterapéutica</h3>
+                    <div class="grid-3">
+                        <div class="form-group"><label>Motivo Consulta</label><input type="text" id="fis-motivo"></div>
+                        <div class="form-group"><label>Evaluación Postural</label><input type="text" id="fis-postural"></div>
+                        <div class="form-group"><label>Pruebas Especiales</label><input type="text" id="fis-pruebas"></div>
+                    </div>
+                    <div class="form-group"><label>Diagnóstico Funcional</label><input type="text" id="fis-diagnostico"></div>
+
+                    <div class="grid-2 mt-1">
+                        <div>
+                            <h4>Antecedentes</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-fis-antecedentes-tipo" placeholder="Tipo">
+                                <input type="text" id="input-fis-antecedentes-obs" placeholder="Observación">
+                                <button type="button" class="btn btn-secondary" onclick="addAntecedente('fis')">Agregar</button>
+                            </div>
+                            <ul id="list-fis-antecedentes" class="dynamic-list"></ul>
+                        </div>
+                        <div>
+                            <h4>Arcos de Movilidad</h4>
+                            <div class="dynamic-input-group">
+                                <input type="text" id="input-fis-arcos-art" placeholder="Articulación">
+                                <input type="text" id="input-fis-arcos-mov" placeholder="Movimiento">
+                                <input type="number" id="input-fis-arcos-grados" placeholder="Grados °">
+                                <button type="button" class="btn btn-secondary" onclick="addArcoMovilidad()">Agregar</button>
+                            </div>
+                            <ul id="list-fis-arcos" class="dynamic-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-3 mt-1" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+    
+                    <div style="display: flex; flex-direction: column; justify-content: billionaires;">
+                        <h4>Evaluación de Fuerza</h4>
+                        
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <div style="display: flex; gap: 8px; width: 100%;">
+                                <input type="text" id="input-fis-fuerza-mus" placeholder="Músculo" class="form-control" style="flex: 1; min-width: 0;">
+                                <input type="number" id="input-fis-fuerza-grado" placeholder="Escala Daniels" class="form-control" style="flex: 1; min-width: 0;">
+                            </div>
+                            <button type="button" class="btn btn-secondary" onclick="addFuerzaMuscular()" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        
+                        <ul id="list-fis-fuerza" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Tratamiento</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <input type="text" id="input-fis-tratamiento" placeholder="Tratamiento" class="form-control" style="width: 100%;">
+                            <button type="button" class="btn btn-secondary" onclick="addSimpleItem('fis', 'tratamiento')" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-fis-tratamiento" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Recomendaciones</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <input type="text" id="input-fis-recomendaciones" placeholder="Recomendación" class="form-control" style="width: 100%;">
+                            <button type="button" class="btn btn-secondary" onclick="addSimpleItem('fis', 'recomendaciones')" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-fis-recomendaciones" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+
+                </div>
+
+                    <div class="btn-group mt-2">
+                        <button type="button" class="btn btn-success" onclick="executeAction('fis', 'insert')">Registrar</button>
+                        <button type="button" class="btn btn-warning" onclick="executeAction('fis', 'update')">Actualizar</button>
+                        <button type="button" class="btn btn-secondary" onclick="resetFormularios('fis')">Limpiar Campos</button>
+
+                    </div>
+                </form>
+            </div>
+            <div class="card mt-2">
+                <h2>Búsqueda y Eliminación</h2>
+                <div class="grid-2">
+                    <div class="search-box">
+                        <input type="text" id="fis-search-doc" placeholder="Ingrese el número de documento del paciente...">
+                        <button class="btn btn-primary" onclick="buscarHistoriales('fis')">Buscar Historias</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="fis-delete-id" placeholder="ID de la consulta...">
+                        <button class="btn btn-danger" onclick="executeAction('fis', 'delete')">Eliminar</button>
+                    </div>
+                </div>
+
+                <div id="contenedor-tabla-fis" class="mt-2" style="display: none;">
+                    <table class="table-clinica">
+                        <thead>
+                            <tr>
+                                <th>N° Documento</th>
+                                <th>Nombre Paciente</th>
+                                <th>Fecha</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-resultados-fis"></tbody>
+                    </table>
+                </div>
+                <div id="result-fis" class="result-display mt-1"></div>
+            </div>
+        </section>
+
+        <section id="tab-odontologia" class="tab-content">
+            <div class="card">
+                <h2>Formulario de Odontología (Registrar / Actualizar)</h2>
+                <form id="form-odontologia">
+                    <div class="grid-3">
+                        <div class="form-group"><label>ID Consulta</label><input type="text" id="odo-id" readonly placeholder="Autogenerado"></div>
+                        <div class="form-group"><label>ID Médico</label><input type="text" id="odo-medico-id"></div>
+                        <div class="form-group"><label>Especialidad</label><input type="text" id="odo-especialidad"></div>
+                    </div>
+                    <div class="grid-5">
+                        <div class="form-group"><label>Nombre Paciente</label><input type="text" id="odo-pac-nombre"></div>
+                        <div class="form-group"><label>Edad</label><input type="number" id="odo-pac-edad"></div>
+                        <div class="form-group"><label>Sexo</label><input type="text" id="odo-pac-sexo"></div>
+                        <div class="form-group"><label>Tipo ID</label><input type="text" id="odo-pac-tipo-doc" placeholder="CC"></div>
+                        <div class="form-group"><label>Número Documento</label><input type="text" id="odo-pac-doc"></div>
+                    </div>
+                    <div class="grid-3">
+                        <div class="form-group"><label>Entidad</label><input type="text" id="odo-entidad"></div>
+                        <div class="form-group"><label>Higiene Oral</label><input type="text" id="odo-higiene" placeholder="BUENA, REGULAR, MALA"></div>
+                        <div class="form-group"><label>Estado Encías</label><input type="text" id="odo-encias" placeholder="SANA, GINGIVITIS"></div>
+                    </div>
+                    <div class="form-group"><label>Motivo Consulta</label><input type="text" id="odo-motivo"></div>
+
+                    <div class="grid-2 mt-1" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 20px;">
+    
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Antecedentes</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <div style="display: flex; gap: 8px; width: 100%;">
+                                <input type="text" id="input-odo-antecedentes-tipo" placeholder="Tipo" class="form-control" style="flex: 1; min-width: 0;">
+                                <input type="text" id="input-odo-antecedentes-obs" placeholder="Observación" class="form-control" style="flex: 2; min-width: 0;">
+                            </div>
+                            <button type="button" class="btn btn-secondary" onclick="addAntecedente('odo')" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-odo-antecedentes" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Odontograma</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            
+                            <div style="display: flex; gap: 8px; width: 100%;">
+                                <input type="number" id="input-odo-odontograma-diente" placeholder="N° Diente" class="form-control" style="flex: 1; min-width: 0;">
+                                <input type="text" id="input-odo-odontograma-cara" placeholder="Cara (Oclusal...)" class="form-control" style="flex: 2; min-width: 0;">
+                            </div>
+                            
+                            <div style="display: flex; gap: 8px; width: 100%;">
+                                <input type="text" id="input-odo-odontograma-estado" placeholder="Estado (Caries...)" class="form-control" style="flex: 1; min-width: 0;">
+                                <input type="text" id="input-odo-odontograma-obs" placeholder="Observación" class="form-control" style="flex: 1; min-width: 0;">
+                            </div>
+                            
+                            <button type="button" class="btn btn-secondary" onclick="addOdontograma()" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-odo-odontograma" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+                </div>
+
+                <div class="grid-2 mt-1" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 20px;">
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Tratamiento</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <input type="text" id="input-odo-tratamiento" placeholder="Plan de Tratamiento" class="form-control" style="width: 100%;">
+                            <button type="button" class="btn btn-secondary" onclick="addSimpleItem('odo', 'tratamiento')" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-odo-tratamiento" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <h4>Recomendaciones</h4>
+                        <div class="dynamic-input-group" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                            <input type="text" id="input-odo-recomendaciones" placeholder="Recomendación" class="form-control" style="width: 100%;">
+                            <button type="button" class="btn btn-secondary" onclick="addSimpleItem('odo', 'recomendaciones')" style="width: 100%; background-color: #5a6268; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">
+                                Agregar
+                            </button>
+                        </div>
+                        <ul id="list-odo-recomendaciones" class="dynamic-list" style="margin-top: 10px; padding-left: 20px;"></ul>
+                    </div>
+                </div>
+
+                
+
+                    <div class="btn-group mt-2">
+                        <button type="button" class="btn btn-success" onclick="executeAction('odo', 'insert')">Registrar</button>
+                        <button type="button" class="btn btn-warning" onclick="executeAction('odo', 'update')">Actualizar</button>
+                        <button type="button" class="btn btn-secondary" onclick="resetFormularios('fis')">Limpiar Campos</button>
+
+                    </div>
+                </form>
+            </div>
+            <div class="card mt-2">
+                <h2>Búsqueda y Eliminación</h2>
+                <div class="grid-2">
+                    <div class="search-box">
+                        <input type="text" id="odo-search-doc" placeholder="Cédula del paciente...">
+                        <button class="btn btn-primary" onclick="buscarHistoriales('odo')">Buscar Historias</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="odo-delete-id" placeholder="ID de la consulta...">
+                        <button class="btn btn-danger" onclick="executeAction('odo', 'delete')">Eliminar</button>
+                    </div>
+                </div>
+
+                <div id="contenedor-tabla-odo" class="mt-2" style="display: none;">
+                    <table class="table-clinica">
+                        <thead>
+                            <tr>
+                                <th>N° Documento</th>
+                                <th>Nombre Paciente</th>
+                                <th>Fecha</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-resultados-odo"></tbody>
+                    </table>
+                </div>
+                <div id="result-odo" class="result-display mt-1"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
