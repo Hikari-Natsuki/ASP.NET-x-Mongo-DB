@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\migpl\\source\\repos\\Clinica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\controller\\odontologocontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\controller\\odontologocontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\service\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\service\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\model\\odontologomd\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\model\\odontologomd\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\repository\\odontologorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\repository\\odontologorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\odontologiadto\\crearconsultaododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\odontologiadto\\crearconsultaododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\odontologiadto\\historiaclinicaododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\odontologiadto\\historiaclinicaododto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\model\\odontologomd\\odontologomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\model\\odontologomd\\odontologomedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\model\\general\\documentoidentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\model\\general\\documentoidentidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\repository\\fisioterapiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\repository\\fisioterapiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\repository\\psicologiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\repository\\psicologiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\service\\fisioterapiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\service\\fisioterapiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\controller\\fisioterapiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\controller\\fisioterapiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\controller\\psicologiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\controller\\psicologiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\service\\psicologiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\service\\psicologiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\odontologiadto\\odontogramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\odontologiadto\\odontogramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\fisioterapiadto\\historialclinicofisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\fisioterapiadto\\historialclinicofisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\fisioterapiadto\\evaluacionfuerzadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\fisioterapiadto\\evaluacionfuerzadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\fisioterapiadto\\arcomovilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\fisioterapiadto\\arcomovilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\fisioterapiadto\\crearconsultafisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\fisioterapiadto\\crearconsultafisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|c:\\users\\migpl\\source\\repos\\clinica\\clinica\\developer\\dto\\psicologia\\crearconsultapsidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6271AB-B2EB-420F-AA38-7698C3A2658C}|Clinica\\Clinica.csproj|solutionrelative:clinica\\developer\\dto\\psicologia\\crearconsultapsidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OdontologoControlller.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\OdontologoControlller.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Controller\\OdontologoControlller.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\OdontologoControlller.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Controller\\OdontologoControlller.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAuwEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T01:03:50.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OdontologoMedico.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\OdontologoMd\\OdontologoMedico.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Model\\OdontologoMd\\OdontologoMedico.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\OdontologoMd\\OdontologoMedico.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Model\\OdontologoMd\\OdontologoMedico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T00:59:54.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\Paciente.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Model\\Paciente.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\Paciente.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Model\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T00:59:16.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Odontologo.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\OdontologoMd\\Odontologo.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Model\\OdontologoMd\\Odontologo.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\OdontologoMd\\Odontologo.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Model\\OdontologoMd\\Odontologo.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAywBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T00:58:15.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoriaClinicaOdoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\HistoriaClinicaOdoDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\OdontologiaDTO\\HistoriaClinicaOdoDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\HistoriaClinicaOdoDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\OdontologiaDTO\\HistoriaClinicaOdoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:14:01.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CrearConsultaOdoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\CrearConsultaOdoDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\OdontologiaDTO\\CrearConsultaOdoDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\CrearConsultaOdoDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\OdontologiaDTO\\CrearConsultaOdoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:13:45.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OdontologoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\OdontologoRepository.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Repository\\OdontologoRepository.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\OdontologoRepository.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Repository\\OdontologoRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T19:35:55.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OdontologoService.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\OdontologoService.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Service\\OdontologoService.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\OdontologoService.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Service\\OdontologoService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T19:35:50.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DocumentoIdentidad.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\General\\DocumentoIdentidad.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Model\\General\\DocumentoIdentidad.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Model\\General\\DocumentoIdentidad.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Model\\General\\DocumentoIdentidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T00:59:22.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FisioterapiaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\FisioterapiaRepository.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Repository\\FisioterapiaRepository.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\FisioterapiaRepository.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Repository\\FisioterapiaRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwFQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:21:05.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FisioterapiaService.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\FisioterapiaService.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Service\\FisioterapiaService.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\FisioterapiaService.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Service\\FisioterapiaService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwKUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T21:15:31.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FisioterapiaController.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\FisioterapiaController.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Controller\\FisioterapiaController.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\FisioterapiaController.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Controller\\FisioterapiaController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T20:55:53.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PsicologiaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\PsicologiaRepository.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Repository\\PsicologiaRepository.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Repository\\PsicologiaRepository.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Repository\\PsicologiaRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T19:55:29.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PsicologiaService.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\PsicologiaService.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Service\\PsicologiaService.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Service\\PsicologiaService.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Service\\PsicologiaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T19:46:01.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PsicologiaController.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\PsicologiaController.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\Controller\\PsicologiaController.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\Controller\\PsicologiaController.cs",
+              "RelativeToolTip": "Clinica\\Developer\\Controller\\PsicologiaController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T19:44:44.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Program.cs",
+              "RelativeDocumentMoniker": "Clinica\\Program.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Program.cs",
+              "RelativeToolTip": "Clinica\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:38:33.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\appsettings.json",
+              "RelativeDocumentMoniker": "Clinica\\appsettings.json",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\appsettings.json",
+              "RelativeToolTip": "Clinica\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-25T18:34:36.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OdontogramaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\OdontogramaDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\OdontologiaDTO\\OdontogramaDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\OdontologiaDTO\\OdontogramaDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\OdontologiaDTO\\OdontogramaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:13:55.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HistorialClinicoFisDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\HistorialClinicoFisDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\HistorialClinicoFisDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\HistorialClinicoFisDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\HistorialClinicoFisDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:11:46.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EvaluacionFuerzaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\EvaluacionFuerzaDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\EvaluacionFuerzaDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\EvaluacionFuerzaDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\EvaluacionFuerzaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:11:11.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ArcoMovilidadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\ArcoMovilidadDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\ArcoMovilidadDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\ArcoMovilidadDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\ArcoMovilidadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:11:04.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CrearConsultaFisDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\CrearConsultaFisDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\CrearConsultaFisDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\FisioterapiaDTO\\CrearConsultaFisDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\FisioterapiaDTO\\CrearConsultaFisDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:10:52.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CrearConsultaPsiDTO.cs",
+              "DocumentMoniker": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\Psicologia\\CrearConsultaPsiDTO.cs",
+              "RelativeDocumentMoniker": "Clinica\\Developer\\DTO\\Psicologia\\CrearConsultaPsiDTO.cs",
+              "ToolTip": "C:\\Users\\migpl\\source\\repos\\Clinica\\Clinica\\Developer\\DTO\\Psicologia\\CrearConsultaPsiDTO.cs",
+              "RelativeToolTip": "Clinica\\Developer\\DTO\\Psicologia\\CrearConsultaPsiDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:10:30.78Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

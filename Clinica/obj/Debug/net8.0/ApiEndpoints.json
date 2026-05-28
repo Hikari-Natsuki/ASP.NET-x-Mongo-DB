@@ -1,0 +1,240 @@
+[
+  {
+    "ContainingType": "Clinica.Developer.Controller.FisioterapiaController",
+    "Method": "Actualizar",
+    "RelativePath": "fisioterapia/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Clinica.Developer.DTO.Fisioterapia.CrearConsultaFisDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.FisioterapiaController",
+    "Method": "ObtenerPorDocumento",
+    "RelativePath": "fisioterapia/buscar/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.FisioterapiaController",
+    "Method": "Eliminar",
+    "RelativePath": "fisioterapia/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.FisioterapiaController",
+    "Method": "RegistrarConsulta",
+    "RelativePath": "fisioterapia/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crear",
+        "Type": "Clinica.Developer.DTO.Fisioterapia.CrearConsultaFisDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.OdontologoControlller",
+    "Method": "Actualizar",
+    "RelativePath": "odontologia/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "consultaDTO",
+        "Type": "Clinica.Developer.DTO.OdontologiaDTO.CrearConsultaOdoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.OdontologoControlller",
+    "Method": "ObtenerHistorialPorDocumento",
+    "RelativePath": "odontologia/buscar/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.OdontologoControlller",
+    "Method": "EliminarHistoria",
+    "RelativePath": "odontologia/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Developer.Controller.OdontologoControlller",
+    "Method": "RegistrarConsulta",
+    "RelativePath": "odontologia/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultaDTO",
+        "Type": "Clinica.Developer.DTO.OdontologiaDTO.CrearConsultaOdoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Psicolog\u00EDa.Developer.Controller.PsicologiaController",
+    "Method": "Actualizar",
+    "RelativePath": "psicologia/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Clinica.Developer.DTO.Psicologia.CrearConsultaPsiDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Psicolog\u00EDa.Developer.Controller.PsicologiaController",
+    "Method": "ObtenerPorDocumento",
+    "RelativePath": "psicologia/buscar/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Psicolog\u00EDa.Developer.Controller.PsicologiaController",
+    "Method": "EliminarHistoria",
+    "RelativePath": "psicologia/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Psicolog\u00EDa.Developer.Controller.PsicologiaController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "psicologia/obtener_todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Psicolog\u00EDa.Developer.Controller.PsicologiaController",
+    "Method": "RegistrarConsulta",
+    "RelativePath": "psicologia/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultaDTO",
+        "Type": "Clinica.Developer.DTO.Psicologia.CrearConsultaPsiDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clinica.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Clinica.WeatherForecast, Clinica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

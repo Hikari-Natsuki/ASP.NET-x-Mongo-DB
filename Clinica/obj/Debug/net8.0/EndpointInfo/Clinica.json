@@ -1,0 +1,724 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Clinica",
+    "version": "1.0"
+  },
+  "paths": {
+    "/fisioterapia/registrar": {
+      "post": {
+        "tags": [
+          "Fisioterapia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/fisioterapia/buscar/{numeroDocumento}": {
+      "get": {
+        "tags": [
+          "Fisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/fisioterapia/actualizar/{id}": {
+      "put": {
+        "tags": [
+          "Fisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaFisDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/fisioterapia/eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "Fisioterapia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/odontologia/registrar": {
+      "post": {
+        "tags": [
+          "OdontologoControlller"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/odontologia/buscar/{numeroDocumento}": {
+      "get": {
+        "tags": [
+          "OdontologoControlller"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/odontologia/actualizar/{id}": {
+      "put": {
+        "tags": [
+          "OdontologoControlller"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaOdoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/odontologia/eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "OdontologoControlller"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/psicologia/registrar": {
+      "post": {
+        "tags": [
+          "Psicologia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/psicologia/obtener_todos": {
+      "get": {
+        "tags": [
+          "Psicologia"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/psicologia/buscar/{numeroDocumento}": {
+      "get": {
+        "tags": [
+          "Psicologia"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/psicologia/actualizar/{id}": {
+      "put": {
+        "tags": [
+          "Psicologia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearConsultaPsiDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/psicologia/eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "Psicologia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AntecedenteDTO": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ArcoMovilidadDTO": {
+        "type": "object",
+        "properties": {
+          "articulacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "movimiento": {
+            "type": "string",
+            "nullable": true
+          },
+          "gradosObtenidos": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearConsultaFisDTO": {
+        "type": "object",
+        "properties": {
+          "paciente": {
+            "$ref": "#/components/schemas/PacienteDTO"
+          },
+          "medicoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "especialidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "entidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "antecedentes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AntecedenteDTO"
+            },
+            "nullable": true
+          },
+          "motivoConsulta": {
+            "type": "string",
+            "nullable": true
+          },
+          "evaluacionPostural": {
+            "type": "string",
+            "nullable": true
+          },
+          "arcosMovilidad": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArcoMovilidadDTO"
+            },
+            "nullable": true
+          },
+          "fuerzaMuscular": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EvaluacionFuerzaDTO"
+            },
+            "nullable": true
+          },
+          "pruebasEspeciales": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagnosticoFuncional": {
+            "type": "string",
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "recomendaciones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearConsultaOdoDTO": {
+        "type": "object",
+        "properties": {
+          "medicoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "especialidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "paciente": {
+            "$ref": "#/components/schemas/PacienteDTO"
+          },
+          "entidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "antecedentes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AntecedenteDTO"
+            },
+            "nullable": true
+          },
+          "motivoConsulta": {
+            "type": "string",
+            "nullable": true
+          },
+          "higieneOral": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoEncias": {
+            "type": "string",
+            "nullable": true
+          },
+          "odontograma": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OdontogramaDTO"
+            },
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "recomendaciones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearConsultaPsiDTO": {
+        "type": "object",
+        "properties": {
+          "paciente": {
+            "$ref": "#/components/schemas/PacienteDTO"
+          },
+          "medicoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "entidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "antecedentes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AntecedenteDTO"
+            },
+            "nullable": true
+          },
+          "motivoConsulta": {
+            "type": "string",
+            "nullable": true
+          },
+          "enfermedadActual": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "examenMental": {
+            "type": "string",
+            "nullable": true
+          },
+          "tratamiento": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "recomendaciones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DocumentoIdentidadDTO": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EvaluacionFuerzaDTO": {
+        "type": "object",
+        "properties": {
+          "musculo": {
+            "type": "string",
+            "nullable": true
+          },
+          "gradoFuerza": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OdontogramaDTO": {
+        "type": "object",
+        "properties": {
+          "numeroDiente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cara": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PacienteDTO": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "$ref": "#/components/schemas/DocumentoIdentidadDTO"
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
